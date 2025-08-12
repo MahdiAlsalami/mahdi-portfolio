@@ -25,7 +25,7 @@ export default function Home() {
                     Software Engineer | CS @ CSULB
                   </span>
                 </h1>
-                <p className="text-xl text-gray-300">Turning Ideas into Digital Reality</p>
+                
               </div>
               <p className="max-w-[600px] text-gray-400 md:text-xl">
                 Rising senior at CSULB with ambitions of becoming a Full-Stack Developer. I enjoy coding, teaching
