@@ -28,7 +28,7 @@ export default function Home() {
                 
               </div>
               <p className="max-w-[600px] text-gray-400 md:text-xl">
-                Rising senior at CSULB with ambitions of becoming a Full-Stack Developer. I enjoy coding, teaching
+                Rising senior at CSULB with ambitions of becoming a Software Engineer. I enjoy coding, teaching
                 others to code, and learning more about it! I'm constantly seeking new challenges and opportunities to
                 grow both personally and professionally in the tech industry.
               </p>
@@ -95,32 +95,33 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">🚀</span>
+                <span className="text-2xl"></span>
               </div>
               <h3 className="text-xl font-bold mb-2">My Journey</h3>
               <p className="text-muted-foreground">
-                I started coding at 15, building simple games. Now I create enterprise-level applications that solve
-                real-world problems. My journey has been driven by curiosity and a passion for technology.
+                I started coding at 18, building simple projects, and over time, developed a passion for solving real-world problems through technology. Now, as a Computer 
+                Science student at California State University Long Beach, I focus on building full-stack applications and exploring AI, machine learning, and mainly focusing 
+                on backend development.
               </p>
             </div>
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">🎯</span>
+                <span className="text-2xl"></span>
               </div>
               <h3 className="text-xl font-bold mb-2">My Approach</h3>
               <p className="text-muted-foreground">
-                I believe in clean, maintainable code and user-centered design. Every project I undertake focuses on
-                delivering exceptional user experiences while maintaining technical excellence.
+                I'm committed to learning and growing every day. I am not afraid to take on challenges or put in the effort to get better at what I do. 
+                I believe in taking the hard route to develop my skills and deliver the best results. My goal is always to grow, improve, and keep pushing myself to be better.
               </p>
             </div>
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">🌱</span>
+                <span className="text-2xl"></span>
               </div>
               <h3 className="text-xl font-bold mb-2">Beyond Code</h3>
               <p className="text-muted-foreground">
-                When I'm not coding, you'll find me hiking, reading sci-fi novels, or experimenting with new cooking
-                recipes. I believe a well-rounded life leads to more creative problem-solving.
+                When I'm not coding, you'll find me hiking, playing video games, or hitting the gym with friends. 
+                I believe a well-rounded life leads to more creative problem-solving.
               </p>
             </div>
           </div>
@@ -130,25 +131,25 @@ export default function Home() {
               <li className="flex items-start">
                 <span className="text-purple-500 mr-2">▹</span>
                 <span>
-                  Studying Computer Science at <strong>University Name</strong> (Expected graduation: 2024)
+                  Studying Computer Science at <strong>California State University Long Beach</strong> (Expected graduation: May 2026)
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-purple-500 mr-2">▹</span>
                 <span>
-                  Working on a <strong>machine learning project</strong> that predicts user behavior
+                  Working on a <strong>varity of projects</strong> to increase my knowledge on Full-Stack development.
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-purple-500 mr-2">▹</span>
                 <span>
-                  Learning <strong>WebGL and Three.js</strong> for creating immersive web experiences
+                  Learning <strong>C and GoLang</strong> to have better backend knowledge!
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-purple-500 mr-2">▹</span>
                 <span>
-                  Seeking <strong>internship opportunities</strong> in software development
+                  Seeking <strong>internship and New-Grad opportunities</strong> in software development.
                 </span>
               </li>
             </ul>
@@ -164,9 +165,9 @@ export default function Home() {
               My Skills
             </div>
             <div className="space-y-2 max-w-3xl">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Technical Toolkit</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Technical Skills</h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Explore my skills by navigating through different categories.
+                
               </p>
             </div>
           </div>
@@ -306,7 +307,7 @@ export default function Home() {
                       href="mailto:mahdialsalami0@example.com"
                       className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                     >
-                      mahdialsalami0@example.com
+                      mahdialsalami0@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
@@ -377,22 +378,14 @@ export default function Home() {
                 href="#"
                 className="text-sm text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
               >
-                Privacy Policy
+                
               </Link>
               <Link
                 href="#"
                 className="text-sm text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
               >
-                Terms of Service
+                
               </Link>
-              <a
-                href="https://vercel.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center gap-1"
-              >
-                Powered by Vercel <ExternalLink className="h-3 w-3" />
-              </a>
             </div>
           </div>
         </div>
