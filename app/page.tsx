@@ -303,10 +303,10 @@ export default function Home() {
                       <Mail className="h-5 w-5 text-purple-600 dark:text-purple-400" />
                     </div>
                     <a
-                      href="mailto:email@example.com"
+                      href="mailto:mahdialsalami0@example.com"
                       className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                     >
-                      email@example.com
+                      mahdialsalami0@example.com
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
@@ -314,12 +314,12 @@ export default function Home() {
                       <Github className="h-5 w-5 text-purple-600 dark:text-purple-400" />
                     </div>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/MahdiAlsalami"
                       className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      github.com/username
+                      github.com/MahdiAlsalami
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
@@ -327,12 +327,12 @@ export default function Home() {
                       <Linkedin className="h-5 w-5 text-purple-600 dark:text-purple-400" />
                     </div>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/mahdialsalamics/"
                       className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      linkedin.com/in/username
+                      www.linkedin.com/in/mahdialsalamics
                     </a>
                   </div>
                 </div>
@@ -366,10 +366,10 @@ export default function Home() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex flex-col items-center md:items-start gap-2">
               <p className="text-center text-sm text-muted-foreground md:text-left">
-                © {new Date().getFullYear()} John Doe. All rights reserved.
+                © {new Date().getFullYear()} Mahdi Alsalami. All rights reserved.
               </p>
               <p className="text-center text-xs text-muted-foreground md:text-left">
-                Designed and built with ❤️ using Next.js and Tailwind CSS
+                Designed and built by Mahdi Alsalami
               </p>
             </div>
             <div className="flex items-center gap-4">
