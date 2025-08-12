@@ -194,13 +194,13 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             <ProjectCard
-              title="AI Image Generator"
-              description="An application that uses machine learning to generate unique images based on text prompts."
-              tags={["Python", "TensorFlow", "React", "Flask"]}
-              imageUrl="/placeholder.svg?height=300&width=500"
+              title="SafetySnap"
+              description="AI-Powered OSHA Violation Detection."
+              tags={["Typescript", "CSS", "React", "JavaScript", "Next.js", "Node.js", "Express", "Google Gemini API", "Supabase"]}
+              imageUrl="/safesnap.jpg?height=300&width=500"
               projectUrl="#"
               githubUrl="#"
-              featured={true}
+              featured={false}
             />
             <ProjectCard
               title="E-Commerce Platform"
