@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import mini from "@/public/mini.jpg" // <— make sure this path exists
 
 export function ProfileImage() {
   return (
@@ -11,15 +12,20 @@ export function ProfileImage() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-gradient-to-r from-purple-500 to-pink-500 shadow-2xl">
-        <Image
-          src="/mini.jpg"
-          alt="Mahdi Alsalami - Software Engineer"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+      {/* Gradient border wrapper */}
+      <div className="relative w-full h-full rounded-full p-1 bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl">
+        {/* Actual circular image container */}
+        <div className="relative w-full h-full rounded-full overflow-hidden">
+          <Image
+            src={mini}                       // <— static import
+            alt="Mahdi Alsalami - Software Engineer"
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="(max-width: 640px) 300px, 400px"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+        </div>
       </div>
     </motion.div>
   )
