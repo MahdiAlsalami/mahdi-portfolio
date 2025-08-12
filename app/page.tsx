@@ -1,3 +1,4 @@
+import { InteractiveTerminal } from "@/components/interactive-terminal"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
@@ -396,6 +397,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <InteractiveTerminal />
     </main>
   )
 }
