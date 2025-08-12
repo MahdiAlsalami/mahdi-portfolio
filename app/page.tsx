@@ -85,10 +85,10 @@ export default function Home() {
             </div>
             <div className="space-y-2 max-w-3xl">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Creating Digital Experiences That Matter
+                Get to Know Me!
               </h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Get to know the person behind the code.
+                
               </p>
             </div>
           </div>
