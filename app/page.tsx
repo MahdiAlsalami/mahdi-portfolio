@@ -350,7 +350,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 mt-2">
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <p>1 year left in undergrad, with the option to pursue a master's.</p>
+                  <p>1 year left in undergrad, with a potential master's option</p>
                 </div>
               </div>
             </div>
