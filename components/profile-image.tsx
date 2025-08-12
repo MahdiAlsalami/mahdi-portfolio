@@ -13,7 +13,7 @@ export function ProfileImage() {
     >
       <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-gradient-to-r from-purple-500 to-pink-500 shadow-2xl">
         <Image
-          src="/headshot.jpeg"
+          src="/placeholder.jpg"
           alt="Mahdi Alsalami - Software Engineer"
           fill
           className="object-cover object-center"
