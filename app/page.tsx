@@ -95,7 +95,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl"></span>
+                <span className="text-2xl">📚</span>
               </div>
               <h3 className="text-xl font-bold mb-2">My Journey</h3>
               <p className="text-muted-foreground">
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl"></span>
+                <span className="text-2xl">💡</span>
               </div>
               <h3 className="text-xl font-bold mb-2">My Approach</h3>
               <p className="text-muted-foreground">
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl shadow-sm">
               <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl"></span>
+                <span className="text-2xl">💪</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Beyond Code</h3>
               <p className="text-muted-foreground">
