@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import mini from "@/public/mini.jpg" // <— make sure this path exists
 
 export function ProfileImage() {
   return (
@@ -14,15 +13,15 @@ export function ProfileImage() {
     >
       {/* Gradient border wrapper */}
       <div className="relative w-full h-full rounded-full p-1 bg-gradient-to-r from-purple-500 to-pink-500 shadow-2xl">
-        {/* Actual circular image container */}
+        {/* Circular image with explicit size (no fill) */}
         <div className="relative w-full h-full rounded-full overflow-hidden">
           <Image
-            src={mini}                       // <— static import
+            src="/mini.jpg" // served from /public
             alt="Mahdi Alsalami - Software Engineer"
-            fill
-            className="object-cover object-center"
+            width={800}      // large intrinsic size for quality
+            height={800}
             priority
-            sizes="(max-width: 640px) 300px, 400px"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
         </div>
