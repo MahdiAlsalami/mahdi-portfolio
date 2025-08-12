@@ -157,7 +157,7 @@ export function SkillsBrowser() {
           </div>
           <div className="flex items-center gap-1 ml-4 bg-white dark:bg-gray-700 rounded-md px-3 py-1 text-xs text-gray-600 dark:text-gray-300">
             <Globe className="h-3 w-3" />
-            <span>skills.johndoe.dev/{activeTab}</span>
+            <span>skills.MahdiAlsalami.dev/{activeTab}</span>
           </div>
         </div>
         <div className="flex items-center gap-2">
