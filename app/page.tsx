@@ -5,8 +5,9 @@ import { ProjectCard } from "@/components/project-card"
 import { ExperienceTimeline } from "@/components/experience-timeline"
 import { ContactForm } from "@/components/contact-form"
 import { SkillsBrowser } from "@/components/skills-browser"
-import { HeroAnimation } from "@/components/hero-animation"
 import { Github, Linkedin, Mail, ExternalLink, ArrowDown } from "lucide-react"
+import { ProfileImage } from "@/components/profile-image"
+
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <HeroAnimation />
+              <ProfileImage />
             </div>
           </div>
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
