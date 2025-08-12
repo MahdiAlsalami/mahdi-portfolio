@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
@@ -153,8 +154,15 @@ export function HeroAnimation() {
         ref={canvasRef}
         className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-900 to-purple-900"
       />
-      <div className="absolute inset-0 flex items-center justify-center text-white text-opacity-90 text-4xl font-bold">
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">&lt;/&gt;</span>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <Image
+          src="/mahdialsalamiheadhsot.jpeg"
+          alt="Mahdi Alsalami"
+          width={160}
+          height={160}
+          className="rounded-full object-cover border-4 border-purple-500 shadow-lg"
+          priority
+        />
       </div>
     </motion.div>
   )
