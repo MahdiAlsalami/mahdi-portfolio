@@ -16,9 +16,9 @@ export function ProfileImage() {
         {/* Circular image with explicit size (no fill) */}
         <div className="relative w-full h-full rounded-full overflow-hidden">
           <Image
-            src="/mini.jpg" // served from /public
+            src="/me.jpg" 
             alt="Mahdi Alsalami - Software Engineer"
-            width={800}      // large intrinsic size for quality
+            width={800}      
             height={800}
             priority
             className="w-full h-full object-cover object-center"
