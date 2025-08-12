@@ -304,7 +304,7 @@ export default function Home() {
                       <Mail className="h-5 w-5 text-purple-600 dark:text-purple-400" />
                     </div>
                     <a
-                      href="mailto:mahdialsalami0@example.com"
+                      href="mailto:mahdialsalami0@gmail.com"
                       className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                     >
                       mahdialsalami0@gmail.com
@@ -342,15 +342,15 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-4">Current Status</h3>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  <p>Available for freelance work</p>
+                  <p>Available for mentorship or coffee chat</p>
                 </div>
                 <div className="flex items-center gap-2 mt-2">
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  <p>Open to internship opportunities</p>
+                  <p>Open to Internship or New-Grad opportunities</p>
                 </div>
                 <div className="flex items-center gap-2 mt-2">
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <p>Limited availability for part-time roles</p>
+                  <p>1 year left in undergrad, with the option to pursue a master's.</p>
                 </div>
               </div>
             </div>
