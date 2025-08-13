@@ -28,20 +28,17 @@ export default function Home() {
                 </h1>
                 
               </div>
-              <p className="max-w-[600px] text-gray-400 md:text-xl">
-                Rising senior at CSULB with ambitions of becoming a Software Engineer. I enjoy coding, teaching
-                others to code, and learning more about it! I'm constantly seeking new challenges and opportunities to
-                grow both personally and professionally in the tech industry.
-              </p>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
-                <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white border-0">
-                  <Link href="#projects">View My Work</Link>
-                </Button>
-                <Button variant="outline" className="border-gray-700 text-white hover:bg-gray-800 bg-transparent">
-                  <Link href="#contact">Get In Touch</Link>
-                </Button>
-              </div>
               <div className="flex items-center gap-4 mt-4">
+                <Link
+                  href="/MahdiAlsalamiCSResume.pdf" // place PDF inside public/
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label="Resume"
+                >
+                  Resume
+                </Link>
+
                 <Link
                   href="https://github.com/MahdiAlsalami"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -49,6 +46,7 @@ export default function Home() {
                 >
                   <Github className="h-6 w-6" />
                 </Link>
+
                 <Link
                   href="https://linkedin.com/in/mahdialsalamics"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -56,6 +54,7 @@ export default function Home() {
                 >
                   <Linkedin className="h-6 w-6" />
                 </Link>
+
                 <Link
                   href="mailto:mahdialsalami0@gmail.com"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -64,6 +63,7 @@ export default function Home() {
                   <Mail className="h-6 w-6" />
                 </Link>
               </div>
+
             </div>
             <div className="flex justify-center lg:justify-end">
               <ProfileImage />
