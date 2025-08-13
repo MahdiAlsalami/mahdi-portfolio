@@ -220,30 +220,33 @@ export default function Home() {
               githubUrl="https://www.credly.com/badges/e9943c6a-6f90-4ebb-8ce7-c2dcafe07712/linked_in_profile"
               featured={false}
             />
-            <ProjectCard
-              title="Weather Dashboard"
-              description="A responsive weather application that displays current conditions and forecasts for any location."
-              tags={["JavaScript", "API Integration", "CSS3"]}
-              imageUrl="/placeholder.svg?height=300&width=500"
-              projectUrl="#"
-              githubUrl="#"
-            />
-            <ProjectCard
-              title="Social Media Analytics"
-              description="A dashboard for tracking and analyzing social media performance across multiple platforms."
-              tags={["React", "D3.js", "Express", "OAuth"]}
-              imageUrl="/placeholder.svg?height=300&width=500"
-              projectUrl="#"
-              githubUrl="#"
-            />
+
             <ProjectCard
               title="Portfolio Website"
               description="This very website, designed and built to showcase my skills and projects."
-              tags={["Next.js", "Tailwind CSS", "Framer Motion"]}
-              imageUrl="/placeholder.svg?height=300&width=500"
+              tags={["Next.js", "Tailwind CSS", "React", "TypeScript"]}
+              imageUrl="/aboutmeweb.jpg?height=300&width=500"
               projectUrl="#"
               githubUrl="#"
             />
+
+            <ProjectCard
+              title="Asteroid Game"
+              description="Built a classic Asteroids game in Python using OOP and multi-file project structure for hands-on programming practice."
+              tags={["Python", "Pygame"]}
+              imageUrl="/asteroidgame.jpg?height=300&width=500"
+              projectUrl="https://github.com/MahdiAlsalami/Asteroids-Game"
+              githubUrl="https://github.com/MahdiAlsalami/Asteroids-Game"
+            />
+            <ProjectCard
+              title="Coming soon..."
+              description=""
+              tags={[""]}
+              imageUrl="/comingsoon.jpg?height=300&width=500"
+              projectUrl="#"
+              githubUrl="#"
+            />
+          
           </div>
           <div className="flex justify-center mt-12">
             <Button variant="outline" className="group bg-transparent">
