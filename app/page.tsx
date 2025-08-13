@@ -198,27 +198,27 @@ export default function Home() {
               description="AI-Powered OSHA Violation Detection."
               tags={["Typescript", "CSS", "React", "JavaScript", "Next.js", "Node.js", "Express", "Google Gemini API", "Supabase"]}
               imageUrl="/safesnap.jpg?height=300&width=500"
-              projectUrl="#"
-              githubUrl="#"
+              projectUrl="https://github.com/Cole-Hartman/SafetySnap"
+              githubUrl="https://github.com/Cole-Hartman/SafetySnap"
               featured={false}
             />
             <ProjectCard
-              title="E-Commerce Platform"
-              description="A full-stack e-commerce platform with user authentication, product catalog, and payment processing."
-              tags={["React", "Node.js", "MongoDB", "Stripe"]}
-              imageUrl="/placeholder.svg?height=300&width=500"
-              projectUrl="#"
-              githubUrl="#"
-              featured={true}
+              title="CS Content Creator"
+              description="Create fun and educational content about computer science and coding."
+              tags={["Content", "Education", "Inspiring", "Growth"]}
+              imageUrl="/cscontent.jpg?height=300&width=500"
+              projectUrl="https://lnk.bio/MahdiAlsalami"
+              githubUrl="https://lnk.bio/MahdiAlsalami"
+              featured={false}
             />
             <ProjectCard
-              title="Task Management App"
-              description="A productivity app for managing tasks, projects, and deadlines with team collaboration features."
-              tags={["Next.js", "TypeScript", "Prisma", "PostgreSQL"]}
-              imageUrl="/placeholder.svg?height=300&width=500"
-              projectUrl="#"
-              githubUrl="#"
-              featured={true}
+              title="IBM Accelerate Full-Stack Dev Program"
+              description="Built cloud-native apps in IBMs selective 4.5% acceptance program, earning full-stack certification."
+              tags={["React", "Node.js", "JavaScript", "HTML", "CSS", "Git", "Agile", "Application Security"]}
+              imageUrl="/ibmacc.jpg?height=300&width=500"
+              projectUrl="https://www.credly.com/badges/e9943c6a-6f90-4ebb-8ce7-c2dcafe07712/linked_in_profile"
+              githubUrl="https://www.credly.com/badges/e9943c6a-6f90-4ebb-8ce7-c2dcafe07712/linked_in_profile"
+              featured={false}
             />
             <ProjectCard
               title="Weather Dashboard"
