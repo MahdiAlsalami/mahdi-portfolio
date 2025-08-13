@@ -234,7 +234,7 @@ export default function Home() {
               title="Asteroid Game"
               description="Built a classic Asteroids game in Python using OOP and multi-file project structure for hands-on programming practice."
               tags={["Python", "Pygame"]}
-              imageUrl="/asteroidgame.jpg?height=300&width=500"
+              imageUrl="/asteriodgame.jpg?height=300&width=500"
               projectUrl="https://github.com/MahdiAlsalami/Asteroids-Game"
               githubUrl="https://github.com/MahdiAlsalami/Asteroids-Game"
             />
