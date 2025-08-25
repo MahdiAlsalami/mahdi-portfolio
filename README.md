@@ -1,7 +1,6 @@
 # 🌐 Mahdi Alsalami – Personal Portfolio
 
-This is my personal portfolio website, built to showcase my journey, skills, and projects as a Computer Science student and aspiring Software Engineer.  
-It’s designed to highlight my experience, provide quick access to my resume, and share ways to connect with me.
+This is my personal portfolio website, built to showcase my journey, skills, and projects as a Computer Science student and aspiring Software Engineer. It’s designed to highlight my experience, provide quick access to my resume, and share ways to connect with me.
 
 👉 **Live Site:** [mahdialsalami.dev](https://www.mahdialsalami.dev/)
 
