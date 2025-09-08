@@ -65,7 +65,7 @@ export default function Home() {
                   <Mail className="h-6 w-6" />
                 </Link>
                   <Link
-                    href="/resume.pdf" // place PDF inside public/
+                    href="/MahdiResumeCompSci.pdf" // place PDF inside public/
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
@@ -234,10 +234,21 @@ export default function Home() {
             <ProjectCard
               title="Portfolio Website"
               description="This very website, designed and built to showcase my skills and projects."
-              tags={["Next.js", "Tailwind CSS", "React", "TypeScript"]}
+              tags={["Next.js", "TypeScript", "Tailwind", "Supabase"]}
               imageUrl="/aboutmeweb.jpg?height=300&width=500"
               projectUrl="#"
               githubUrl="#"
+            />
+
+
+            <ProjectCard
+              title="ThriveSites"
+              description="ThriveSites is a service that helps small 
+              businesses grow by building affordable, professional websites with ongoing maintenance and support so owners can focus on running their business."
+              tags={["Next.js", "Tailwind CSS", "React", "TypeScript"]}
+              imageUrl="/thrivepicp.png?height=300&width=500"
+              projectUrl="https://thrivesites.vercel.app/"
+              githubUrl="https://github.com/MahdiAlsalami/thrivesites"
             />
 
             <ProjectCard
