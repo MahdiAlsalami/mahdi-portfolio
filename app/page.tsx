@@ -65,7 +65,7 @@ export default function Home() {
                   <Mail className="h-6 w-6" />
                 </Link>
                   <Link
-                    href="/MahdiResumeCompSci.pdf" // place PDF inside public/
+                    href="/Mahdi_Alsalami_Resume.pdf" // place PDF inside public/
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
