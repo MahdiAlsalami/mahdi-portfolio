@@ -262,7 +262,7 @@ export default function Home() {
             <ProjectCard
               title="Coming soon..."
               description=""
-              tags={["More project will be featured"]}
+              tags={["test"]}
               imageUrl="/comingsoon.jpg?height=300&width=500"
               projectUrl="#"
               githubUrl="#"
