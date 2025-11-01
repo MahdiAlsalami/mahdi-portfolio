@@ -5,8 +5,21 @@ import { Badge } from "@/components/ui/badge"
 import { Briefcase, GraduationCap, Award } from "lucide-react"
 
 const experiences = [
-  {
+
+    {
     id: 1,
+    title: "Software Engineer Intern",
+    company: "Premier Elite National Basketball Team",
+    location: "Downey, CA",
+    period: "Aug 2025 - Oct 2025",
+    description:
+      "Developed a full-stack parent portal using React and Node.js for player sign-ups, jersey sizing, and roster management. Enhanced UI responsiveness by optimizing component rendering and state handling in React, and streamlined data flow between frontend forms and backend storage to improve reliability and access.",
+    skills: ["React", "Node.js", "JavaScript", "Frontend Development", "Full-Stack Development"],
+    type: "work",
+  },
+
+  {
+    id: 2,
     title: "Information Technology Student Assistant",
     company: "City of Downey",
     location: "Downey, CA",
@@ -17,7 +30,7 @@ const experiences = [
     type: "work",
   },
   {
-    id: 2,
+    id: 3,
     title: "Software Accelerate Apprenticeship",
     company: "IBM",
     location: "Remote",
@@ -28,7 +41,7 @@ const experiences = [
     type: "work",
   },
   {
-    id: 3,
+    id: 4,
     title: "Software Engineer Intern",
     company: "Ani",
     location: "Remote",
@@ -39,7 +52,7 @@ const experiences = [
     type: "work",
   },
   {
-    id: 4,
+    id: 5,
     title: "Coding Coach",
     company: "theCoderSchool",
     location: "Cerritos, CA",
@@ -50,7 +63,7 @@ const experiences = [
     type: "work",
   },
   {
-    id: 5,
+    id: 6,
     title: "Software Engineer Intern",
     company: "Beads Factory",
     location: "La Palma, CA",
@@ -61,7 +74,7 @@ const experiences = [
     type: "work",
   },
   {
-    id: 6,
+    id: 7,
     title: "Bachelor of Science in Computer Science",
     company: "California State University, Long Beach",
     location: "Long Beach, CA",
@@ -72,7 +85,7 @@ const experiences = [
     type: "education",
   },
   {
-    id: 7,
+    id: 8,
     title: "Edison STEM Scholarship Recipient",
     company: "Edison International",
     location: "California",

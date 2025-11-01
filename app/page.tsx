@@ -203,6 +203,18 @@ export default function Home() {
             </div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+
+            <ProjectCard
+              title="Serenity"
+              description="Real time EEG stress detection with 3D brain view and calming mode."
+              tags={["TypeScript", "Next.js", "Supabase", "BrainFlow", "BrainBrowser", "Web Audio", "Three.js", "EEG", "Realtime"]}
+              imageUrl="/serentiylogo.jpg?height=300&width=500"
+              projectUrl="https://github.com/Cole-Hartman/Serenity"
+              githubUrl="https://github.com/Cole-Hartman/Serenity"
+              featured={false}
+            />
+
             <ProjectCard
               title="SafetySnap"
               description="AI-Powered OSHA Violation Detection."
@@ -212,6 +224,18 @@ export default function Home() {
               githubUrl="https://github.com/Cole-Hartman/SafetySnap"
               featured={false}
             />
+            <ProjectCard
+              title="ClutchCalc"
+              description="NBA analytics tool for real-time player prop insights and matchup predictions."
+              tags={["TypeScript", "Next.js", "React", "Tailwind", "Vite", "Recharts", "balldontlie API", "Supabase", "Sports Analytics"]}
+              imageUrl="/clutchcalc.png?height=300&width=500"
+              projectUrl="https://github.com/MahdiAlsalami/clutch-stat-projections"
+              githubUrl="https://github.com/MahdiAlsalami/clutch-stat-projections"
+              featured={false}
+            />
+
+            
+
             <ProjectCard
               title="CS Content Creator"
               description="Create fun and educational content about computer science and coding."
