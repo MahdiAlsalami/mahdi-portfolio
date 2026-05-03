@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#151515"/>
+  <g opacity=".22" filter="url(#blur)">
+    <circle cx="290" cy="160" r="170" fill="#F5F5F5"/>
+    <circle cx="820" cy="188" r="150" fill="#AABECB"/>
+    <circle cx="640" cy="456" r="210" fill="#FFFFFF"/>
+  </g>
+  <text x="150" y="260" fill="#F5F5F5" font-family="Avenir Next, Helvetica Neue, sans-serif" font-size="78" font-weight="700">Mahdi Alsalami</text>
+  <text x="154" y="340" fill="#A3A3A3" font-family="Avenir Next, Helvetica Neue, sans-serif" font-size="34">Software engineering, practical tools, and learning.</text>
+  <defs>
+    <filter id="blur" x="-100" y="-100" width="1400" height="830" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+  </defs>
+</svg>
