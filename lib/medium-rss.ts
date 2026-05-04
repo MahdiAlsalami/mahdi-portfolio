@@ -5,7 +5,9 @@ const MEDIUM_FEED_URL = "https://medium.com/feed/@mahdialsalami0";
 export type BlogPost = {
   title: string;
   href: string;
+  slug: string;
   date: string;
+  contentHtml: string;
 };
 
 function decodeHtml(value: string) {
@@ -44,6 +46,42 @@ function normalizeMediumLink(value: string) {
   return value.split("?")[0];
 }
 
+function getSlugFromHref(value: string) {
+  try {
+    const url = new URL(value);
+    const segments = url.pathname.split("/").filter(Boolean);
+
+    return segments.at(-1) ?? "";
+  } catch {
+    return value.split("/").filter(Boolean).at(-1) ?? "";
+  }
+}
+
+function sanitizeMediumHtml(value: string) {
+  return value
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
+    .replace(/<iframe[\s\S]*?<\/iframe>/gi, "")
+    .replace(/<object[\s\S]*?<\/object>/gi, "")
+    .replace(/<embed[\s\S]*?<\/embed>/gi, "")
+    .replace(/<link[\s\S]*?>/gi, "")
+    .replace(/<meta[\s\S]*?>/gi, "")
+    .replace(/\s+on\w+=(["']).*?\1/gi, "")
+    .replace(/\s+on\w+=\S+/gi, "")
+    .replace(/\s+(href|src)=(["'])javascript:[\s\S]*?\2/gi, "")
+    .trim();
+}
+
+function getFallbackPosts(): BlogPost[] {
+  return blogItems.map((item) => ({
+    title: item.title,
+    href: item.href,
+    slug: getSlugFromHref(item.href),
+    date: item.date,
+    contentHtml: ""
+  }));
+}
+
 function parseMediumRss(xml: string): BlogPost[] {
   const items = xml.match(/<item>[\s\S]*?<\/item>/gi) ?? [];
 
@@ -52,14 +90,18 @@ function parseMediumRss(xml: string): BlogPost[] {
       const title = getTagValue(item, "title");
       const href = getTagValue(item, "link");
       const publishedAt = getTagValue(item, "pubDate");
+      const contentHtml = getTagValue(item, "content:encoded");
+      const normalizedHref = normalizeMediumLink(href);
 
       return {
         title,
-        href: normalizeMediumLink(href),
-        date: formatDate(publishedAt)
+        href: normalizedHref,
+        slug: getSlugFromHref(normalizedHref),
+        date: formatDate(publishedAt),
+        contentHtml: sanitizeMediumHtml(contentHtml)
       };
     })
-    .filter((post) => post.title && post.href);
+    .filter((post) => post.title && post.href && post.slug);
 }
 
 export async function getMediumPosts(): Promise<BlogPost[]> {
@@ -71,14 +113,20 @@ export async function getMediumPosts(): Promise<BlogPost[]> {
     });
 
     if (!response.ok) {
-      return [...blogItems];
+      return getFallbackPosts();
     }
 
     const xml = await response.text();
     const posts = parseMediumRss(xml);
 
-    return posts.length > 0 ? posts : [...blogItems];
+    return posts.length > 0 ? posts : getFallbackPosts();
   } catch {
-    return [...blogItems];
+    return getFallbackPosts();
   }
+}
+
+export async function getMediumPost(slug: string) {
+  const posts = await getMediumPosts();
+
+  return posts.find((post) => post.slug === slug) ?? null;
 }

@@ -1,5 +1,6 @@
 import { SiteShell } from "@/components/site-shell";
 import { getMediumPosts } from "@/lib/medium-rss";
+import Link from "next/link";
 
 export const revalidate = 21600;
 
@@ -15,14 +16,12 @@ export default async function BlogsPage() {
           {posts.map((post) => (
             <article key={post.href}>
               <h2 className="text-[1.55rem] leading-9">
-                <a
-                  href={post.href}
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  href={`/blogs/${post.slug}`}
                   className="text-sky-300 transition hover:text-sky-200"
                 >
                   {post.title}
-                </a>
+                </Link>
               </h2>
               <p className="mt-2 text-[1.12rem] leading-7 text-zinc-500">{post.date}</p>
             </article>
