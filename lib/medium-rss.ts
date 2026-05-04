@@ -108,7 +108,7 @@ export async function getMediumPosts(): Promise<BlogPost[]> {
   try {
     const response = await fetch(MEDIUM_FEED_URL, {
       next: {
-        revalidate: 21600
+        revalidate: 60
       }
     });
 

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { SiteShell } from "@/components/site-shell";
 import { getMediumPost, getMediumPosts } from "@/lib/medium-rss";
 
-export const revalidate = 21600;
+export const revalidate = 60;
 
 type BlogPostPageProps = {
   params: Promise<{
